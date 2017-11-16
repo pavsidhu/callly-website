@@ -1,0 +1,27 @@
+{
+  "name": "callly-website",
+  "description": "Preview website for Callly",
+  "version": "1.0.0",
+  "author": "Pav Sidhu <pav@pavsidhu.com>",
+  "dependencies": {
+    "gatsby": "^1.9.112",
+    "gatsby-link": "^1.6.28",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-react-next": "^1.0.4",
+    "gatsby-plugin-styled-components": "^2.0.2",
+    "styled-components": "^2.2.3"
+  },
+  "keywords": ["gatsby"],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.8.2"
+  }
+}
